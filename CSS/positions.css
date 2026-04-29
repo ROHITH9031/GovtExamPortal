@@ -1,0 +1,48 @@
+.container{
+    width: 600px;
+    height: 600px;
+    background-color: aqua;
+}
+
+.box{
+    color: white;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.static{
+    position: static;
+    background-color: red;
+}
+
+.rel{
+    position: relative;
+    background-color: green;
+    /* top: 50px;
+    left: 100px; */
+    top: -100px;
+    left: 125px;
+
+}
+.abs{
+    background-color: chocolate;
+
+}
+.fix{
+    background-color: black;
+
+}
+.sti{
+    background-color: purple;
+    position: sticky ;
+
+}
+.roc{
+    background-color: violet;
+    color: brown;
+    border-radius: 5px;
+    border-width: 20px;
+    width: 15%;
+    height: 5%;
+}

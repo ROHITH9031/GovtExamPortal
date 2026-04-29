@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>Forms in HTML</h2>
+    <form action="FormSubmitMsg.html">
+      <label for="firstname">Enter Your First name:</label>
+      <input type="text" id="firstname" minlength="" maxlength="" required placeholder="Your Name" value="" name="fname" ><br><br>
+
+      <label for="lastname">Enter Your Last Name:</label>
+      <input type="text" id="lastname" required placeholder="Your Surname" value="" name="lname" ><br><br>
+
+      <label for="age">Enter Your Age:</label>
+      <input type="number" id="age" required placeholder="Age" value="age"><br><br>
+
+      <label for="mail">Enter Your E-Mail:</label>
+      <input type="email" id="mail" required placeholder="mail" value="" mail="mail"><br><br>
+
+      <label for="DOB">Enter Joining Date:</label>
+      <input type="date" id="DOB" ><br><br>
+
+      <label for="pass">Enter Your Password</label>
+      <input type="password" id="pass" placeholder="Enter Password" ><br><br>
+
+      <label for="">Enter Your Shirt Size:</label>
+      <input type="radio" name="shirtsize" id="small" value="small"><label for="small">Small</label>
+      <input type="radio" name="shirtsize" id="medium" value="medium" ><label for="medium">Medium</label>
+      <input type="radio" name="shirtsize" id="large" value="large"><label for="large">Large</label><br><br>
+
+      <label for="">Give Your Rating</label>
+      <input type="radio" id="One" disabled><label for="One">One</label>
+      <input type="radio" id="five"><label for="five">Five</label><br><br>
+
+      <label for="languages">Tick Your Native Language.</label>
+      <input type="checkbox" id="Telugu"> <label for="Telugu">Telugu</label>
+      <input type="checkbox" id="English"><label for="English">English</label>
+      <input type="checkbox" id="Hindi"><label for="Hindi">Hindi</label>
+      <br><br>
+      <label for="color">Please Select the colour of your shirt:</label>
+      <input type="color" id="color"><br><br>
+
+      <label for="payment">Please Select a payment method:</label>
+      <select name="payment" id="payment">
+        <option value=""></option>
+        <option value="Gpay">Gpay</option>
+        <option value="phpay">PhPay</option>
+        <option value="paytm">Paytm</option>
+        <option value="COD">COD</option>
+      </select><br><br>
+
+      <label for="feedback">Provide Your FeedBack:</label><br>
+      <!-- <input type="text"> -->
+       <textarea name="cmt" id="feedback" rows="10" cols="100" placeholder="Feedback with 300 characters"></textarea><br><br>
+
+       <input type="reset"><br><br>
+
+       <input type="submit">
+
+       
+
+      
+    </form>
+</body>
+</html>

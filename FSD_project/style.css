@@ -1,0 +1,127 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f4f7f9;
+  color: #333;
+}
+
+header {
+  background-color: #1c4e80;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd369;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #e0f7fa;
+}
+
+.hero input {
+  padding: 10px;
+  width: 60%;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.exam-grid {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.exam-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 15px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.exam-card:hover {
+  transform: translateY(-5px);
+}
+
+#notifications {
+  text-align: center;
+  padding: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+.paper-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.paper-btn {
+  padding: 10px 20px;
+  background-color: #1c4e80;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.paper-btn:hover {
+  background-color: #163b61;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+
+input, textarea, button {
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #1c4e80;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #163b61;
+}
+
+footer {
+  background: #1c4e80;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}

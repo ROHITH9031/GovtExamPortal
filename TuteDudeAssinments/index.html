@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Wallah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">Welcome to Laundry Wallah</h1>
+        <div>
+            <nav class="nav">
+                <ul class="lists">
+                    <li>
+                        <a href="#home">Home</a>
+                        <!-- <a href="#About" id="#About">About</a> -->
+                        <a href="#services">Our Services</a>
+                        <a href="#price-list">Price List</a>
+                        <a href="#book-now">Book Now</a>
+
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <section class="home" id="home">
+
+            <div class="leftdiv">
+
+                <p class="home">
+                    <h2>About Laundry Wallah</h2>
+                    Welcome to Laundry Wallah, Your one-step solution for all your laundry needs. Our dedicated team
+                    ensures
+                    top-notch services, providing a hassle-free and efficient laundry experience. With a focus on
+                    quality
+                    and customer satisfaction, we take care of your garments as if they were our own.
+                </p>
+            </div>
+
+            <div class="rightdiv">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.RewnK_h7-PyCJWx-WrWw2AHaHB?pid=Api&P=0&h=180" alt="img1">
+
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="ourservices">
+                <h2>Our Services</h2>
+                <ul class="serviceslist">
+                    <li>Washing And Drying</li>
+                    <li>Ironing and Folding</li>
+                    <li>Dry Cleaning</li>
+                    <li>Stain Removal</li>
+                    <li>Express Services</li>
+                    <li>Special Garment Care</li>
+                    <li>And More..</li>
+                </ul>
+            </div>
+        </section>
+        <section class="pricelist" id="price-list">
+            <div class="servicestable">
+                <h2>Price List:</h2>
+                <table border="2" cellspacing="10" cellpadding="5">
+                    <tr>
+                        <th>Services</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Washing and Drying</td>
+                        <td>Rs10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Ironing and Folding</td>
+                        <td>Rs5.00</td>
+                    </tr>
+
+                </table>
+            </div>
+        </section>
+
+        <section class="booknow" id="book-now">
+            <div class="booking">
+                <h2>Book Now:</h2>
+                <form action="FormSubmitMsg.html">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required><br><br>
+
+                    <label for="ph">Phone:</label>
+                    <input type="number" id="ph" required placeholder="Enter Your Mobile Number"><br><br>
+
+                    <input type="submit">
+
+                </form>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <h2>
+            Quick Links
+        </h2>
+        <ul class="lists">
+                    <li>
+                        <a href="#home">Home</a>
+                        <!-- <a href="#About" id="#About">About</a> -->
+                        <a href="#services">Our Services</a>
+                        <a href="#price-list">Price List</a>
+                        <a href="#book-now">Book Now</a>
+
+                    </li>
+                </ul>
+
+                <p>Contact us at: info@laundrywallah.com</p>
+                <p>&copy all rights are reserved to Laundry Wallah Company</p>
+
+        
+    </footer>
+
+<script>
+    // Smoothly scroll to sections while accounting for sticky header height.
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            var targetId = this.getAttribute('href');
+            if (!targetId || targetId === '#') return;
+
+            var targetElement = document.querySelector(targetId);
+            if (!targetElement) return;
+
+            event.preventDefault();
+            var header = document.querySelector('.header');
+            var headerOffset = header ? header.offsetHeight : 0;
+            var targetTop = targetElement.getBoundingClientRect().top + window.pageYOffset - headerOffset - 8;
+
+            window.scrollTo({
+                top: targetTop,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+/*
+syntax for selectors
+
+Selector type{
+proprtykey: property value;
+
+}
+*/
+/* 1.Element Selector */
+/* body{
+    background-color: black;
+}
+h2,h1{
+    color: red;
+}
+p{
+    color: blueviolet;
+}
+h1{
+    text-align: center;
+}
+
+/* 2.Id Selector */
+/* #p2{
+    color: aliceblue;
+}
+#p1{
+    font-family: cursive;
+    color: aliceblue;
+}
+#p3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+}
+ */
+
+/* 3.Class Selector  */
+
+/* .p1class{
+    color: red;
+    background-color: black ;
+}
+/* #nested{
+    color: red;
+} */
+/* .nestedclass{
+    color: aqua; */
+/* } */ */
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+
+}
+body{
+    font-size: 20px;
+    text-align: center;
+    color: chocolate;
+    background-color: antiquewhite;
+    
+}
+article{
+    background-color: red;
+    color: black;
+    padding: 45px;
+    margin: 45px;
+    border-radius: 5%;
+
+}

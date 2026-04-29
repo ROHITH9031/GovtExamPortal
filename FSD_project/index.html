@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExamReady | Govt Exam Info</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ExamReady</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#exams">Exams</a></li>
+        <li><a href="#notifications">Notifications</a></li>
+        <li><a href="#papers">Previous Papers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Welcome Future Officer!</h2>
+    <p>Stay ahead with the latest government exam info, dates, and study materials.</p>
+    <input type="text" id="searchBar" placeholder="Search for an exam...">
+  </section>
+
+  <section id="exams">
+    <h2>Government Exams</h2>
+    <div class="exam-grid">
+      <div class="exam-card">
+        <h3>UPSC Civil Services</h3>
+        <p>All India level exam for IAS, IPS, IFS and other services.</p>
+      </div>
+      <div class="exam-card">
+        <h3>SSC CGL</h3>
+        <p>Recruitment for Group B and C posts under central government.</p>
+      </div>
+      <div class="exam-card">
+        <h3>State PSC</h3>
+        <p>Examinations for various state-level administrative posts.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="notifications">
+    <h2>Latest Notifications</h2>
+    <button id="toggleNotifications">Show Notifications</button>
+    <ul id="notificationList" class="hidden">
+      <li>UPSC CSE 2024 Registration – Opens 14 Feb 2024</li>
+      <li>SSC CHSL Exam Date – 1–12 June 2024</li>
+      <li>TNPSC Group 1 Prelims – 30 April 2024</li>
+    </ul>
+  </section>
+
+  <section id="papers">
+    <h2>Previous Question Papers</h2>
+    <div class="paper-links">
+      <button class="paper-btn" data-paper="upsc">UPSC (Download PDF)</button>
+      <button class="paper-btn" data-paper="ssc">SSC CGL (Download PDF)</button>
+      <button class="paper-btn" data-paper="tnpsc">TNPSC (Download PDF)</button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 ExamReady | Designed for Government Exam Aspirants</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

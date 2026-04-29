@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        // let num = prompt("Enter a number: ");
+        // alert("The number is: "+num);
+
+        function Factorial() {
+            let num = prompt("Enter a number: ");
+            document.write("The number is: "+num);
+            let fact = 1;
+            for(let i=1;i<=num;i++){
+                fact=fact*i;
+                // alert("Factorial of "+num+"is: "+fact);
+            }
+            document.write("<br> Factorial of "+num+"is: "+fact);
+            
+        }
+        // alert("Factorial of "+num+"is: "+fact)
+        // Factorial()
+
+        function Fibonacci(){
+            let num2 = prompt("Enter Number to get Fibonacci Series: ");
+            document.write("Your Number is: "+num2);
+
+            let series = [];
+            let a=0,b=1;
+            while(a<=num2){
+                series.push(a);
+                let temp =a+b;
+                a=b;
+                b=temp;
+            }
+            document.write("<br> Fibonacci Series: "+series);
+        }
+        // document.write("Fibonacci Series: "+series);
+        // Fibonacci()
+
+        function Prime() {
+            let num = prompt("<break> Enter Number: ");
+            document.write("<br> The Number is: "+num);
+
+            let primes=[];
+            for(let i=2;i<=num;i++){
+                let isPrime=true;
+                for(let j=2; j<=Math.sqrt(i);j++){
+                    if(i%j==0){
+                        isPrime=false;
+                        break;
+                    }
+                }
+                if(isPrime) primes.push(i);
+            }
+            document.write("Prime Numbers: "+primes);
+            
+        }
+
+        function Palindrome() {
+
+            let num = prompt("Enter a number: ");
+            document.write("Number is: "+num);
+
+            rev = num.split("").reverse().join("");
+            if(num==rev){
+                document.write("<br>"+num+" is a palindrome");
+
+            }
+            else{
+                document.write(+num+" is not a palindrome");
+            }
+            
+        }
+
+    </script>
+    <h2>JavaScript Functions</h2>
+    <button onclick="Factorial()">Factorial</button>
+    <button onclick="Fibonacci()">Fibonacci</button>
+    <button onclick="Prime()">Primes</button>
+    <button onclick="Palindrome()">Palindrome</button>
+</body>
+</html>

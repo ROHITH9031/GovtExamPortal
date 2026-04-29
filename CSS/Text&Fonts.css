@@ -1,0 +1,26 @@
+h1{
+    color: chocolate;
+    background-color: aqua;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: black;
+    text-shadow: 1.5px 1.5px 2px black;
+    font-family: cursive;
+    
+    
+}
+p{
+    text-align: justify;
+    text-indent: 80px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+a{
+    color: brown;
+    text-decoration: line-through;
+    text-decoration-color: black;
+    text-decoration-style: dotted ;
+}

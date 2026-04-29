@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocky Restaurant</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          <span class="logo-icon"><i class="fa-solid fa-utensils"></i></span>
+          Rocky Restaurant
+        </a>
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ===== HOME / HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-sub">Welcome to</p>
+        <h1 class="hero-title">Rocky Restaurant</h1>
+        <p class="hero-desc">
+          Where every meal is a masterpiece — crafted with passion,<br />
+          served with love, and remembered forever.
+        </p>
+        <div class="hero-btns">
+          <a href="#menu" class="btn btn-primary">Explore Menu</a>
+          <a href="#contact" class="btn btn-outline">Reserve a Table</a>
+        </div>
+      </div>
+      <div class="scroll-down">
+        <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Our Story</p>
+          <h2 class="section-title">About Rocky Restaurant</h2>
+          <div class="divider"><span></span></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-img-wrap">
+            <div class="about-img-box img-front">
+              <img
+                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80"
+                alt="Restaurant interior"
+              />
+            </div>
+            <div class="about-img-box img-back">
+              <img
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80"
+                alt="Chef cooking"
+              />
+            </div>
+          </div>
+          <div class="about-text">
+            <h3>A Culinary Journey Since 2005</h3>
+            <p>
+              Rocky Restaurant was born from a simple dream — to bring the
+              world's finest flavours to your table. Nestled in the heart of the
+              city, we have been serving exceptional food and warm hospitality
+              for over two decades.
+            </p>
+            <p>
+              Our chefs source the freshest local ingredients and blend
+              traditional recipes with modern techniques to create dishes that
+              delight the senses and nourish the soul.
+            </p>
+            <ul class="about-highlights">
+              <li><i class="fa-solid fa-check-circle"></i> Farm-to-Table Ingredients</li>
+              <li><i class="fa-solid fa-check-circle"></i> Award-Winning Chefs</li>
+              <li><i class="fa-solid fa-check-circle"></i> Cozy &amp; Elegant Ambience</li>
+              <li><i class="fa-solid fa-check-circle"></i> Live Music Every Weekend</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Book Your Table</a>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-row">
+          <div class="stat-card">
+            <i class="fa-solid fa-user-tie"></i>
+            <h4>20+</h4>
+            <p>Expert Chefs</p>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-star"></i>
+            <h4>4.9</h4>
+            <p>Average Rating</p>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-bowl-food"></i>
+            <h4>150+</h4>
+            <p>Menu Items</p>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-heart"></i>
+            <h4>50K+</h4>
+            <p>Happy Guests</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MENU ===== -->
+    <section class="menu section" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">What We Serve</p>
+          <h2 class="section-title">Our Menu</h2>
+          <div class="divider"><span></span></div>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="menu-tabs">
+          <button class="tab-btn active" data-cat="starters">Starters</button>
+          <button class="tab-btn" data-cat="mains">Main Course</button>
+          <button class="tab-btn" data-cat="grills">Grills &amp; BBQ</button>
+          <button class="tab-btn" data-cat="desserts">Desserts</button>
+          <button class="tab-btn" data-cat="drinks">Drinks</button>
+        </div>
+
+        <!-- Menu Cards -->
+        <div class="menu-grid" id="menuGrid">
+
+          <!-- STARTERS -->
+          <div class="menu-card" data-cat="starters">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&q=80" alt="Bruschetta" />
+              <span class="badge">Popular</span>
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Classic Bruschetta</h4><span>$8.99</span>
+              </div>
+              <p>Toasted bread topped with fresh tomatoes, basil, garlic &amp; olive oil.</p>
+            </div>
+          </div>
+
+          <div class="menu-card" data-cat="starters">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1603073163308-9654c3fb70b5?w=400&q=80" alt="Soup" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Creamy Mushroom Soup</h4><span>$7.49</span>
+              </div>
+              <p>Rich, velvety mushroom broth with a touch of cream and fresh herbs.</p>
+            </div>
+          </div>
+
+          <div class="menu-card" data-cat="starters">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?w=400&q=80" alt="Calamari" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Crispy Calamari</h4><span>$10.99</span>
+              </div>
+              <p>Golden-fried calamari rings served with lemon-aioli dipping sauce.</p>
+            </div>
+          </div>
+
+          <!-- MAINS -->
+          <div class="menu-card" data-cat="mains">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" alt="Pasta" />
+              <span class="badge">Chef's Pick</span>
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Rocky Special Pasta</h4><span>$15.99</span>
+              </div>
+              <p>Handmade fettuccine in a slow-cooked tomato ragù with parmesan.</p>
+            </div>
+          </div>
+
+          <div class="menu-card" data-cat="mains">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&q=80" alt="Salmon" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Pan-Seared Salmon</h4><span>$22.99</span>
+              </div>
+              <p>Atlantic salmon fillet with lemon butter sauce, capers and asparagus.</p>
+            </div>
+          </div>
+
+          <div class="menu-card" data-cat="mains">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80" alt="Biryani" />
+              <span class="badge">Bestseller</span>
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Chicken Biryani</h4><span>$17.99</span>
+              </div>
+              <p>Fragrant basmati rice layered with spiced chicken, saffron &amp; fried onions.</p>
+            </div>
+          </div>
+
+          <!-- GRILLS -->
+          <div class="menu-card" data-cat="grills">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80" alt="Steak" />
+              <span class="badge">Signature</span>
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Rocky Prime Steak</h4><span>$34.99</span>
+              </div>
+              <p>250g ribeye cooked to perfection, served with mashed potato &amp; gravy.</p>
+            </div>
+          </div>
+
+          <div class="menu-card" data-cat="grills">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=400&q=80" alt="BBQ Ribs" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Smoky BBQ Ribs</h4><span>$28.99</span>
+              </div>
+              <p>Fall-off-the-bone pork ribs glazed with our signature smoky BBQ sauce.</p>
+            </div>
+          </div>
+
+          <div class="menu-card" data-cat="grills">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80" alt="Burger" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Rocky Smash Burger</h4><span>$14.99</span>
+              </div>
+              <p>Double smashed beef patty, cheddar, pickles, caramelised onion &amp; house sauce.</p>
+            </div>
+          </div>
+
+          <!-- DESSERTS -->
+          <div class="menu-card" data-cat="desserts">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80" alt="Tiramisu" />
+              <span class="badge">Favourite</span>
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Classic Tiramisu</h4><span>$9.99</span>
+              </div>
+              <p>Espresso-soaked ladyfingers layered with mascarpone cream &amp; cocoa dust.</p>
+            </div>
+          </div>
+
+          <div class="menu-card" data-cat="desserts">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&q=80" alt="Cake" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Chocolate Lava Cake</h4><span>$10.99</span>
+              </div>
+              <p>Warm dark-chocolate cake with a molten centre, served with vanilla ice cream.</p>
+            </div>
+          </div>
+
+          <div class="menu-card" data-cat="desserts">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1488477181228-c84c2f7ad4fb?w=400&q=80" alt="Ice Cream" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Artisan Ice Cream</h4><span>$6.99</span>
+              </div>
+              <p>Three scoops of rotating house-made flavours with fresh fruit compote.</p>
+            </div>
+          </div>
+
+          <!-- DRINKS -->
+          <div class="menu-card" data-cat="drinks">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=400&q=80" alt="Cocktail" />
+              <span class="badge">New</span>
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Rocky Sunset Cocktail</h4><span>$12.99</span>
+              </div>
+              <p>Mango, passionfruit, lime &amp; mint blended into a tropical signature mix.</p>
+            </div>
+          </div>
+
+          <div class="menu-card" data-cat="drinks">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80" alt="Coffee" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Specialty Coffee</h4><span>$5.49</span>
+              </div>
+              <p>Single-origin espresso drinks — flat white, cappuccino, latte &amp; more.</p>
+            </div>
+          </div>
+
+          <div class="menu-card" data-cat="drinks">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400&q=80" alt="Fresh Juice" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-price">
+                <h4>Fresh Pressed Juices</h4><span>$6.49</span>
+              </div>
+              <p>Cold-pressed seasonal fruit &amp; vegetable juices — no sugar added.</p>
+            </div>
+          </div>
+
+        </div><!-- /menu-grid -->
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Guest Reviews</p>
+          <h2 class="section-title">What Our Guests Say</h2>
+          <div class="divider"><span></span></div>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"The Rocky Prime Steak was absolutely divine. Best dining experience I've had in years. The ambience is magical!"</p>
+            <div class="testi-author">
+              <img src="https://i.pravatar.cc/60?img=11" alt="Guest" />
+              <div><strong>Priya Sharma</strong><span>Food Blogger</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"From the moment we walked in, we felt special. The Chicken Biryani is a must-try. Rocky Restaurant is our go-to!"</p>
+            <div class="testi-author">
+              <img src="https://i.pravatar.cc/60?img=32" alt="Guest" />
+              <div><strong>Rahul Mehta</strong><span>Regular Guest</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <p>"Exceptional service, beautiful decor, and food that tastes like home — but elevated. The tiramisu alone is worth the visit!"</p>
+            <div class="testi-author">
+              <img src="https://i.pravatar.cc/60?img=47" alt="Guest" />
+              <div><strong>Ananya Reddy</strong><span>Travel &amp; Food Writer</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Get In Touch</p>
+          <h2 class="section-title">Contact Us</h2>
+          <div class="divider"><span></span></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info -->
+          <div class="contact-info">
+            <h3>Visit Us</h3>
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Address</strong>
+                <p>42, Rocky Lane, Food Street,<br />Hyderabad, Telangana — 500032</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Phone</strong>
+                <p>+91 98765 43210<br />+91 90012 34567</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <p>hello@rockyrestaurant.com<br />reservations@rockyrestaurant.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Opening Hours</strong>
+                <p>Mon – Fri: 11:00 AM – 11:00 PM<br />Sat – Sun: 10:00 AM – 12:00 AM</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3>Make a Reservation</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+91 00000 00000" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" required />
+              </div>
+              <div class="form-group">
+                <label for="guests">Guests</label>
+                <select id="guests">
+                  <option value="">Select</option>
+                  <option>1 Person</option>
+                  <option>2 People</option>
+                  <option>3 – 5 People</option>
+                  <option>6 – 10 People</option>
+                  <option>10+ People</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Special Requests</label>
+              <textarea id="message" rows="4" placeholder="Any dietary requirements or special occasions..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-paper-plane"></i> Confirm Reservation
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fa-solid fa-circle-check"></i> Thank you! We'll confirm your reservation shortly.
+            </div>
+          </form>
+        </div>
+
+        <!-- Map placeholder -->
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.3160584279!2d78.24323285!3d17.412608700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Rocky Restaurant Location">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="logo"><i class="fa-solid fa-utensils"></i> Rocky Restaurant</span>
+            <p>Crafting unforgettable dining experiences since 2005. Come hungry, leave happy.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#menu">Our Menu</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Opening Hours</h4>
+            <ul class="hours-list">
+              <li><span>Mon – Fri</span><span>11AM – 11PM</span></li>
+              <li><span>Saturday</span><span>10AM – 12AM</span></li>
+              <li><span>Sunday</span><span>10AM – 12AM</span></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Contact Info</h4>
+            <ul>
+              <li><i class="fa-solid fa-location-dot"></i> 42, Rocky Lane, Hyderabad</li>
+              <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+              <li><i class="fa-solid fa-envelope"></i> hello@rockyrestaurant.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Rocky Restaurant. All rights reserved.</p>
+          <p>Designed with <i class="fa-solid fa-heart" style="color:#e63946"></i> for food lovers.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script>
+      // ---- Sticky Navbar ----
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 60);
+        document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 400);
+      });
+
+      // ---- Hamburger Menu ----
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('navLinks');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        navLinks.classList.toggle('open');
+      });
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('open');
+          navLinks.classList.remove('open');
+        });
+      });
+
+      // ---- Active nav link on scroll ----
+      const sections = document.querySelectorAll('section[id]');
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(sec => {
+          if (window.scrollY >= sec.offsetTop - 80) current = sec.id;
+        });
+        document.querySelectorAll('.nav-links a').forEach(a => {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+        });
+      });
+
+      // ---- Menu Tabs ----
+      const tabBtns = document.querySelectorAll('.tab-btn');
+      const menuCards = document.querySelectorAll('.menu-card');
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const cat = btn.dataset.cat;
+          menuCards.forEach(card => {
+            const match = card.dataset.cat === cat;
+            card.style.display = match ? 'flex' : 'none';
+            if (match) {
+              card.style.animation = 'none';
+              card.offsetHeight;
+              card.style.animation = 'fadeUp 0.4s ease forwards';
+            }
+          });
+        });
+      });
+      // Init: show only starters
+      menuCards.forEach(card => {
+        card.style.display = card.dataset.cat === 'starters' ? 'flex' : 'none';
+      });
+
+      // ---- Contact Form ----
+      document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        document.getElementById('formSuccess').style.display = 'flex';
+        this.reset();
+        setTimeout(() => { document.getElementById('formSuccess').style.display = 'none'; }, 5000);
+      });
+    </script>
+  </body>
+</html>

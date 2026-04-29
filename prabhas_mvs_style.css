@@ -1,0 +1,18 @@
+ movie-card {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+
+ movie-card a {
+    display: block;
+    margin-top: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+ movie-card a:hover {
+    color: #e63946;
+}
+

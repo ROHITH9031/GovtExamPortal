@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Demo</title>
+  <!-- Linking external CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>CSS Selector Demonstration</h1>
+  <h2>Simple Selectors</h2>
+  <p>This is a normal paragraph.</p>
+  <p id="special">This paragraph uses an ID selector.</p>
+  <p class="highlight">This paragraph uses a class selector.</p>
+
+  <h2>Combinator Selectors</h2>
+  <div>
+    <p>Child of div (italic + red).</p>
+    <span><p>Descendant inside span (red only).</p></span>
+  </div>
+  <p>Paragraph after h2 (underline + gray background).</p>
+  <p>Another sibling paragraph (gray background).</p>
+
+  <h2>Pseudo-class Selectors</h2>
+  <ul>
+    <li>First item styled purple.</li>
+    <li>Second item normal.</li>
+  </ul>
+  <a href="https://example.com" target="_blank">External Link</a>
+  <br>
+  <input type="text" placeholder="Focus me!">
+  <input type="password" placeholder="Password field">
+
+  <h2>Pseudo-element Selectors</h2>
+  <p>This paragraph demonstrates ::first-line, ::before, and ::after.</p>
+
+  <h2>Attribute Selectors</h2>
+  <p title="tooltip">Hover me to see dotted underline from [title] selector.</p>
+</body>
+</html>

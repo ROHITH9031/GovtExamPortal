@@ -1,0 +1,38 @@
+/* i. Simple selectors */
+p 
+{    color: blue;
+ }                  /* element selector */
+#special
+{
+     font-weight: bold;
+ }     /* id selector */
+
+.highlight { background: yellow; }  /* class selector */
+
+h1, h2 { color: green; }            /* group selector */
+* { font-family: Arial, sans-serif; } /* universal selector */
+
+
+
+/* ii. Combinator selectors */
+div p { color: red; }               /* descendant selector */
+div > p { font-style: italic; }     /* child selector */
+h2 + p { text-decoration: underline; } /* adjacent sibling */
+h2 ~ p { background: grey; }     /* general sibling */
+
+
+
+/* iii. Pseudo-class selectors */
+a:hover { color: orange; }          /* hover state */
+li:first-child { color: purple; }   /* first child */
+input:focus { border: 2px solid red; } /* focus state */
+
+/* iv. Pseudo-element selectors */
+p::first-line { font-size: 18px; }  /* first line of paragraph */
+p::before { content: "👉 "; }       /* before each paragraph */
+p::after { content: " 👈"; }        /* after each paragraph */
+
+/* v. Attribute selectors */
+input[type="text"] { background: #e0f7fa; }
+a[target="_blank"] { color: red; }
+[title] { border-bottom: 1px dotted gray; }
