@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>selectors</title>
+    
+     <style>
+        div p{
+            color: brown;
+        }
+        div > h3{
+            color: aqua;
+        }
+
+        h2 + p{
+            color: blue;
+        }
+        h2~span{
+            color: purple;
+        }
+     </style>
+    </head>
+    <body>
+        <div>
+            <h3>child heading</h3>
+            <p>paragraph inside div</p>
+
+        </div>
+        <h2>heading</h2>
+        <p>adjacent sibiling</p>
+
+        <span>general sibiling1</span>
+        <span>general sibiling2</span>
+    </body>
+
+</html>

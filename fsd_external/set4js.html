@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>windows object methods demo</h2>
+    <p id="output"></p>
+    <script>
+        alert("welcome to javascript");
+        let confirmationResult = confirm("do you want to continue");
+        let name = prompt("enter your name: ");
+        let msg;
+        if(confirmationResult){
+            msg="hello" + name + ",you choose to contiune";
+        }
+        else{
+            msg="hello" + name+ ",you cancelled the action";
+        }
+        document.getElementById("output").innerHTML=msg
+    </script>
+</body>
+</html>
